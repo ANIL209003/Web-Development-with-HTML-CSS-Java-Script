@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        .container{
+            background-color: burlywood;
+            border-width: 3px;
+            border-style: solid;
+            border-color:  rgb(64, 6, 119));
+            padding: 100px;
+            margin: 30px;
+        }
+
+        .bgcontainer{
+            background-color: burlywood;
+            border: 3px solid rgb(64, 6, 119);
+           /* we can set margin/padding for top, bottom,right,left like this
+            padding-top: 100px;
+            padding-right: 50px;
+            padding-bottom: 100px;
+            padding-left: 50px; */
+
+             /*padding= top right bottom left*/
+             /*padding: 100px 50px 100px 56px; */
+
+             /* padding: y(top,bottom) x(right,left); */
+             padding:100px 19px ;
+
+            margin: 30px;
+            border-radius: 15px;
+            border-width: 5px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"> 
+        <h2>This is my heading</h2>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias maiores, voluptas libero, sunt minima voluptatum hic velit esse eum, voluptatibus aperiam nesciunt exercitationem. Consequuntur eos doloremque ut maxime, itaque quisquam.</p>
+    </div>
+     
+    <div class="container"> 
+        <h2>This is my second heading</h2>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias maiores, voluptas libero, sunt minima voluptatum hic velit esse eum, voluptatibus aperiam nesciunt exercitationem. Consequuntur eos doloremque ut maxime, itaque quisquam.</p>
+    </div>
+
+    <div class="bgcontainer"> 
+        <h2>This is my third heading</h2>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias maiores, voluptas libero, sunt minima voluptatum hic velit esse eum, voluptatibus aperiam nesciunt exercitationem. Consequuntur eos doloremque ut maxime, itaque quisquam.</p>
+    </div>
+    
+</body>
+</html>

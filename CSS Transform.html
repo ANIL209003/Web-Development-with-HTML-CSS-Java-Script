@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        h2{
+            background-color: violet;
+            text-align: center;
+            font-size: 80px;
+            font-family: cursive;
+        }
+        .container{
+            display: flex;
+            height: 80vh;
+            background-color: burlywood;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .box{
+            display: flex;
+            background-color: brown;
+            border: 2px solid black;
+            border-radius: 8px;
+            font-family: cursive;
+            font-size: 100px;
+            height: 400px;
+            width: 400px;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.8s ease-in-out;
+        }
+
+        .box:hover{
+            transform: rotate(400deg);
+            /* transform: skew(40deg); */
+            /* transform: scale(2); */
+            /* transform: translateX(123px); */
+            /* transform: translateY(123px); */
+            /* transform: translate(123px, 123px); */
+            cursor: pointer;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h2>Software Engineer ARYA</h2>
+    <div class="container">
+        <div class="box">
+            Bewafa
+        </div>
+    </div>
+</body>
+</html>

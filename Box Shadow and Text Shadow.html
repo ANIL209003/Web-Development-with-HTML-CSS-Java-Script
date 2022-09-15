@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .car {
+            padding: 23px 12px;
+            /* border: 3px solid hotpink; */
+            margin: 23px 12px;
+            background-color: gray;
+
+            /* box-shadow: offset-x offset-y color; */
+            /* box-shadow: offset-x offset-y blur-radius color; */
+            /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+
+            /* box-shadow: 10px 13px green; */
+            /* box-shadow: -10px -13px green; */
+            /* box-shadow: 7px 5px 10px green; */
+            /* box-shadow: -7px -5px 10px green;  */
+            /* box-shadow: -7px -5px 10px 34px rgb(91, 114, 91); */
+            /* box-shadow: -7px -5px 10px 34px rgba(71, 172, 172, 0.5); */
+            box-shadow: inset 3px 5px green;
+
+            box-shadow: 3px 5px rgb(73, 103, 73), 4px 6px rgb(14, 0, 0);
+        }
+
+        .car h2 {
+            /* text-shadow: 3px 4px red; */
+            text-shadow: 3px 2px 2px white;
+            /* text-shadow: -3px -2px 2px white; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="car" id="card1">
+            <h2>This is C++ Course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore fugit, reiciendis voluptas, ullam nobis
+                nihil nostrum tempore asperiores numquam repellendus illo quos pariatur nam. Placeat blanditiis sapiente
+                laborum ipsum laudantium perspiciatis dicta eveniet tempora?</p>
+        </div>
+
+        <div class="car" id="card2">
+            <h2>This is HTML course</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia praesentium fuga architecto? Assumenda,
+                beatae. Minima, dolore! Velit odio, atque commodi doloremque omnis non, et enim ullam architecto
+                provident maxime. Dolores dolore obcaecati debitis alias!</p>
+        </div>
+
+        <div class="car" id="card3">
+            <h2>Card3</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia sit porro aliquid id vitae molestias
+                reiciendis maiores temporibus animi, amet, cupiditate at ducimus blanditiis eum nemo, minus perspiciatis
+                necessitatibus quae ad est fugiat laborum?</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in JavaScript</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>This is container</h1>
+    </div>
+    <script>
+        console.log("Function in JavaScript");
+
+        function greet(name, greetText = "Greetings from JavaScript") {
+            let name1 = "Name1";
+            console.log(greetText + " " + name);
+            console.log(name + " is a good boy");
+        }
+
+        function sum(a, b, c) {
+            let d = a + b + c;
+            return d;
+            // This line will never execute (Unreachable code)
+            // console.log("Function is returned");
+        }
+
+
+        let name = "Arya";
+        let name1 = "Manish";
+        let name2 = "Rashid";
+        let name3 = "Chetan";
+        let greetText1 = "Good Morning";
+        greet(name, greetText1);
+        greet(name1, greetText1);
+        greet(name2, greetText1);
+        greet(name3, greetText1)
+        // let returnVal = greet(name3);
+        // console.log(returnVal)
+
+        let returnVal = sum(1, 2, 3);
+        console.log(returnVal)
+
+        // let name = "Arya"
+        // let name1 = "Manish"
+        // let name2 = "Rashid"
+        // let name3 = "ravi"
+        // console.log(name + " is a good boy")
+        // console.log(name1 + " is a good boy")
+        // console.log(name2 + " is a good boy")
+        // console.log(name3 + " is a good boy")
+
+    </script>
+
+</html>
